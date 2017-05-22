@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<form action="index2.php" method="GET">
+<?
+$f="file.txt";
+$m=file($f);
+for ($i=0; $i<count($m);$i++) {echo $i.")".$m[$i];}
+?>
+</body>
+</html>
+
+
+
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<? $a="a b|c|d|e";
+$b=explode("|",$a);
+for ($i=0;$i<count($b);$i++)echo $b[$i];
+?>
+</body>
+</html>
